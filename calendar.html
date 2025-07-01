@@ -1,0 +1,32 @@
+<!-- calendar.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>학교 일정</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="node_modules/@fullcalendar/core/main.css">
+  <link rel="stylesheet" href="node_modules/@fullcalendar/daygrid/main.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>📘 메뉴</h2>
+    <ul>
+      <li><a href="index.html">🏫 메인</a></li>
+      <li><a href="map.html">🗺️ 지도</a></li>
+      <li><a href="calendar.html">📅 일정</a></li>
+      <li><a href="#">🔐 로그인</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>학교 일정</h1>
+    <div id="calendar"></div>
+  </div>
+
+  <script src="node_modules/@fullcalendar/core/index.global.js"></script>
+  <script src="node_modules/@fullcalendar/daygrid/index.global.js"></script>
+  <script src="node_modules/@fullcalendar/interaction/index.global.js"></script>
+  <script src="calendar.js"></script>
+</body>
+</html>
