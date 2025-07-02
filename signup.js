@@ -2,8 +2,8 @@ document.getElementById("signup-btn").addEventListener("click", () => {
     const email = document.getElementById("email").value;
     const pw = document.getElementById("password").value;
 
-    auth.createUserWithEmailAndPassword(email, pw)
-        .then(() => {
+    firebase.auth().createUserWithEmailAndPassword(email, pw)
+        .then((userCredential) => {
             alert("회원가입 성공!");
             window.location.href = "login.html";
         })
